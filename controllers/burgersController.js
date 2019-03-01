@@ -15,19 +15,18 @@ router.get("/burgers", function(req, res) {
 
 router.post("/burgers/create", function(req, res) {
   db.Burgers.create({
-    id: null,
     burger_name: req.body.burger_name,
     devoured: false
     });
     res.redirect("/");
   });
 
-router.put("/burgers/update", function(req, res) {
+router.put("/burgers/:id", function(req, res) {
   db.Burgers.update({
     devoured: true
-  }, {
+    }, {
     where: {
-      id: req.body.burger_id
+      id: req.body.id
     }
   });
     res.redirect("/");
