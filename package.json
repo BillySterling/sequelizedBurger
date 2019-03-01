@@ -1,34 +1,31 @@
 {
-  "name": "sequelizeburger",
+  "name": "sequelizedburger",
   "version": "1.0.0",
-  "description": "-Node \r -Express \r -MySQL \r -Handlebars \r -Jquery",
+  "description": "Burger 2: The Sequel",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
-  "author": "Billy Sterling",
-  "license": "ISC",
-  "dependencies": {
-    "express": "^4.16.3",
-    "express-handlebars": "^3.0.0",
-    "mysql": "^2.16.0",
-    "mysql2": "^1.6.5",
-    "sequelize": "^4.42.0"
-  },
-  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/BillySterling/sequelizedBurger.git"
   },
   "keywords": [
-    "Node",
     "sequelize",
-    "mySQL",
-    "express"
+    "javascript"
   ],
+  "author": "Billy Sterling",
+  "license": "ISC",
   "bugs": {
     "url": "https://github.com/BillySterling/sequelizedBurger/issues"
   },
-  "homepage": "https://github.com/BillySterling/sequelizedBurger#readme"
+  "homepage": "https://github.com/BillySterling/sequelizedBurger#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "express-handlebars": "^3.0.2",
+    "mysql": "^2.16.0",
+    "mysql2": "^1.6.5",
+    "sequelize": "^4.42.1"
+  }
 }
