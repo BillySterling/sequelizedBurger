@@ -23,20 +23,18 @@ router.post("/burgers/create", function(req, res) {
     res.redirect("/");
   });
 
-router.put("/burgers/eat/:id", function(req, res) {
+router.put("/burgers/:id", function(req, res) {
   console.log("PUT by ID: " + req.params.id)
   db.Burgers.update({
     devoured: true
     }, {
     where: {
-//      id: req.body.id
       id: req.params.id
     }
   })
     .then(function(burgerData) {
       res.json("/");
   })  
-//    res.redirect("/");
   });
 
 module.exports = router;
