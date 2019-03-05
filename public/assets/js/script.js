@@ -1,17 +1,17 @@
-$(document).ready(function() {
+//$(document).ready(function() {
     
   $(".devour-form").on("submit", function(event) {
     event.preventDefault();
 
-    var burger_id = $(this).children(".burger_id").val();
-    console.log(burger_id);
+    var burger_id = $(this).find(".burger_id").val();
+    console.log("BURGER ID = " + burger_id);
     $.ajax({
       method: "PUT",
-      url: "/burgers/" + burger_id
+      url: "/burgers/eat/" + burger_id
     }).then(function(data) {
       // reload page to display devoured burger in proper column
       location.reload();
     });
 
   });
-});
+//});
