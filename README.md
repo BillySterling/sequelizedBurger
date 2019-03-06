@@ -12,7 +12,7 @@ Node.js, Express.js, JavaScript, JQuery, Sequelize, MySQL, and Heroku
 
 ![Landing Page Image](EatDaBurgerPage.png)
 
-   * [Heroku](https://limitless-wildwood-91948.herokuapp.com/)
+   * Heroku link coming soon.
    * Enter a burger in the text box in the middle of the page and click Submit.
    * Your burger will be displayed on the left of the page.
    * Click the "Devour It" button to "eat" the burger.  Burger will then display in "Devoured" column on right of page.
