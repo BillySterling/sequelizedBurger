@@ -28,6 +28,7 @@ router.put("/burgers/:id", function(req, res) {
       id: req.params.id
     }
   })
+    // eslint-disable-next-line no-unused-vars
     .then(function(burgerData) {
       res.json("/");
   })  
