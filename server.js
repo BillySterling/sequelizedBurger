@@ -23,6 +23,7 @@ db.sequelize.sync({ force: true }).then(function() {
 //db.sequelize.sync({}).then(function() {
 
   app.listen(PORT, function() {
+    // eslint-disable-next-line no-console
     console.log("App listening on PORT " + PORT);
   });
 });
