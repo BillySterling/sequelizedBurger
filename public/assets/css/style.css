@@ -55,6 +55,7 @@ body {
 }
 
 .button-size {
+  display: flex;
   padding-bottom: 20px;
 }
 
